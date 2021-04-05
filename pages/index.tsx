@@ -13,7 +13,6 @@ const indexPage: NextPage = () => (
         name="Description"
         content="My blog, talking about several of my projects, and some guides."
       ></meta>
-      <link rel="shortcut icon" href="/favicon.ico" />
     </Head>
     {posts.map((post) => (
       <Post key={post.link} post={post} />
