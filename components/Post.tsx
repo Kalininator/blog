@@ -28,10 +28,10 @@ export const Post = ({ post }: { post: post }): JSX.Element => {
           h1 {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #f39c12;
+            color: #d79921;
           }
           .details span {
-            color: #bdbdbd;
+            color: #8ec07c;
             margin-right: 1rem;
           }
           .details {

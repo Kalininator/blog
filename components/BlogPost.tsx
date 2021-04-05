@@ -20,13 +20,13 @@ export default function BlogPost({ children, meta }: PostModule): JSX.Element {
           h1 {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #f39c12;
+            color: #d79921;
           }
           .great-title {
             font-size: 2rem;
           }
           .details span {
-            color: #bdbdbd;
+            color: #8ec07c;
             margin-right: 1rem;
           }
           .details {

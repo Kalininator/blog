@@ -14,7 +14,7 @@ export default function Header(): JSX.Element {
       </div>
       <style jsx>{`
         nav {
-          background: #444;
+          background: #3c3836;
           width: auto;
           padding: 0 2rem;
           display: flex;
@@ -25,6 +25,7 @@ export default function Header(): JSX.Element {
         nav a {
           margin-right: 1rem;
           text-decoration: none;
+          color: #fabd2f;
         }
         nav a:hover {
           text-decoration: underline;

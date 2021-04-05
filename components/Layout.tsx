@@ -26,8 +26,8 @@ export default function Layout({
           padding: 0;
           font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
             Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          background: #333;
-          color: #fff;
+          background: #282828;
+          color: #fbf1c7;
           font-size: 1rem;
         }
         h1,
@@ -41,7 +41,7 @@ export default function Layout({
             Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         a {
-          color: #fff;
+          color: #fbf1c7;
         }
         img {
           max-width: 100%;
