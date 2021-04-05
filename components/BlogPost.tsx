@@ -1,13 +1,7 @@
 import Head from 'next/head';
-import { PostMetadata } from './PostMetadata';
+import { PostModule } from './getAllPosts';
 
-export default function BlogPost({
-  children,
-  meta,
-}: {
-  children: React.ReactNode;
-  meta: PostMetadata;
-}): JSX.Element {
+export default function BlogPost({ children, meta }: PostModule): JSX.Element {
   return (
     <>
       <Head>

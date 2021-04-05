@@ -1,6 +1,12 @@
-type post = {
+import { PostMetadata } from './PostMetadata';
+
+export type PostModule = {
+  meta: PostMetadata;
+  children: React.ReactNode;
+};
+export type post = {
   link: string;
-  module: any;
+  module: PostModule;
 };
 
 function importAll(r: __WebpackModuleApi.RequireContext): post[] {

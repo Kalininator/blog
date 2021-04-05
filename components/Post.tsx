@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { post } from './getAllPosts';
 
-export const Post = ({ post }: any): JSX.Element => {
+export const Post = ({ post }: { post: post }): JSX.Element => {
   const {
     link,
     module: { meta },

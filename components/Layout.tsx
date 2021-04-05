@@ -1,7 +1,15 @@
 import Head from 'next/head';
 import Header from './Header';
 
-export default function Layout({ children, pageTitle, description }: any): JSX.Element {
+export default function Layout({
+  children,
+  pageTitle,
+  description,
+}: {
+  children: React.ReactNode;
+  pageTitle: string;
+  description: string;
+}): JSX.Element {
   return (
     <>
       <Head>
