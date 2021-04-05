@@ -45,6 +45,8 @@ export default function Layout({
         }
         img {
           max-width: 100%;
+          height: auto;
+          object-fit: contain;
         }
         .content {
           max-width: 600px;

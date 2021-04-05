@@ -14,9 +14,13 @@ const indexPage: NextPage = () => (
         content="My blog, talking about several of my projects, and some guides."
       ></meta>
     </Head>
-    {posts.map((post) => (
-      <Post key={post.link} post={post} />
-    ))}
+    {posts
+      .sort((a, b) => {
+        return new Date(a.module.meta.date) < new Date(b.module.meta.date) ? 1 : -1;
+      })
+      .map((post) => (
+        <Post key={post.link} post={post} />
+      ))}
   </>
 );
 
