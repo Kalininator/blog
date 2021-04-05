@@ -8,6 +8,10 @@ export default function Header(): JSX.Element {
           <h1>Alex Kalinin</h1>
         </a>
       </Link>
+      <div>
+        <a href="https://github.com/Kalininator">GitHub</a>
+        <a href="https://www.linkedin.com/in/kalininator/">LinkedIn</a>
+      </div>
       <style jsx>{`
         nav {
           background: #444;
