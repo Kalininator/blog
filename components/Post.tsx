@@ -35,7 +35,7 @@ export const Post = ({ post }: { post: post }): JSX.Element => {
             margin-right: 1rem;
           }
           .details {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
           }
           a {
             text-decoration: none;
