@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { PostMetadata } from './HeadPost';
+import { PostMetadata } from './PostMetadata';
 
 export default function BlogPost({
   children,
