@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 type PostMetadata = {
   title: string;
   description: string;
@@ -12,6 +14,10 @@ export const HeadPost = ({
   isBlogPost?: boolean;
 }): JSX.Element => (
   <>
+    <Head>
+      <meta name="Description" content={meta.description}></meta>
+      <title>{meta.title}</title>
+    </Head>
     <h1 className={isBlogPost ? 'great-title' : undefined}>{meta.title}</h1>
     <div className="details">
       {isBlogPost ? null : <p>{meta.description}</p>}
