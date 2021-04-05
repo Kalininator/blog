@@ -9,23 +9,20 @@ export const Post = ({ post }: { post: post }): JSX.Element => {
 
   return (
     <>
-      <article>
-        <Link href={link}>
-          <a>
+      <Link href={link}>
+        <a>
+          <article>
             <h1>{meta.title}</h1>
-          </a>
-        </Link>
-        <div className="details">
-          <p>{meta.description}</p>
-          <span>{meta.date}</span>
-          <span role="img" aria-label="one coffee">
-            ☕ {meta.readTime + ' min read'}
-          </span>
-        </div>
-        <Link href={link}>
-          <a>Read more →</a>
-        </Link>
-      </article>
+            <div className="details">
+              <p>{meta.description}</p>
+              <span>{meta.date}</span>
+              <span role="img" aria-label="one coffee">
+                ☕ {meta.readTime + ' min read'}
+              </span>
+            </div>
+          </article>
+        </a>
+      </Link>
       <style jsx>
         {`
           h1 {
