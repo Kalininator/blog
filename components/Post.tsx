@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import dayjs from 'dayjs';
 import { post } from './getAllPosts';
 
 export const Post = ({ post }: { post: post }): JSX.Element => {
@@ -15,7 +16,7 @@ export const Post = ({ post }: { post: post }): JSX.Element => {
             <h1>{meta.title}</h1>
             <div className="details">
               <p>{meta.description}</p>
-              <span>{meta.date}</span>
+              <span>{dayjs(meta.date).format('D MMMM YYYY')}</span>
               <span role="img" aria-label="one coffee">
                 ☕ {meta.readTime + ' min read'}
               </span>

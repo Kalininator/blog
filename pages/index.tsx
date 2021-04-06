@@ -16,7 +16,7 @@ const indexPage: NextPage = () => (
     </Head>
     {posts
       .sort((a, b) => {
-        return new Date(a.module.meta.date) < new Date(b.module.meta.date) ? 1 : -1;
+        return Date.parse(b.module.meta.date) - Date.parse(a.module.meta.date);
       })
       .map((post) => (
         <Post key={post.link} post={post} />

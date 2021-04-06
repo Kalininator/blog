@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import Head from 'next/head';
 import { PostModule } from './getAllPosts';
 
@@ -10,7 +11,7 @@ export default function BlogPost({ children, meta }: PostModule): JSX.Element {
       </Head>
       <h1 className="great-title">{meta.title}</h1>
       <div className="details">
-        <span>{meta.date}</span>
+        <span>{dayjs(meta.date).format('D MMMM YYYY')}</span>
         <span role="img" aria-label="one coffee">
           ☕ {meta.readTime + ' min read'}
         </span>
