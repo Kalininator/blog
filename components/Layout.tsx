@@ -48,6 +48,9 @@ export default function Layout({
           height: auto;
           object-fit: contain;
         }
+        pre {
+          white-space: pre-wrap;
+        }
         .content {
           max-width: 600px;
           margin: 2rem auto;
