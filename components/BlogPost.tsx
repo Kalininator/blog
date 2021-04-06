@@ -1,6 +1,22 @@
 import dayjs from 'dayjs';
 import Head from 'next/head';
+import styled from 'styled-components';
 import { PostModule } from './getAllPosts';
+
+const GreatTitle = styled.h1`
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d79921;
+`;
+
+const DetailsSection = styled.div`
+  margin-bottom: 1rem;
+`;
+
+const Details = styled.span`
+  color: #8ec07c;
+  margin-right: 1rem;
+`;
 
 export default function BlogPost({ children, meta }: PostModule): JSX.Element {
   return (
@@ -15,32 +31,13 @@ export default function BlogPost({ children, meta }: PostModule): JSX.Element {
         <meta name="theme-color" content="#ffffff"></meta>
         <title>{meta.title}</title>
       </Head>
-      <h1 className="great-title">{meta.title}</h1>
-      <div className="details">
-        <span>{dayjs(meta.date).format('D MMMM YYYY')}</span>
-        <span role="img" aria-label="one coffee">
+      <GreatTitle className="great-title">{meta.title}</GreatTitle>
+      <DetailsSection>
+        <Details>{dayjs(meta.date).format('D MMMM YYYY')}</Details>
+        <Details role="img" aria-label="one coffee">
           ☕ {meta.readTime + ' min read'}
-        </span>
-      </div>
-      <style jsx>
-        {`
-          h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #d79921;
-          }
-          .great-title {
-            font-size: 2rem;
-          }
-          .details span {
-            color: #8ec07c;
-            margin-right: 1rem;
-          }
-          .details {
-            margin-bottom: 1rem;
-          }
-        `}
-      </style>
+        </Details>
+      </DetailsSection>
       <article>{children}</article>
     </>
   );
