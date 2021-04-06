@@ -1,36 +1,37 @@
 import Link from 'next/link';
+import styled from 'styled-components';
+
+const Nav = styled.nav`
+  background: #3c3836;
+  width: auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+`;
+
+const NavA = styled.a`
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #fabd2f;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 export default function Header(): JSX.Element {
   return (
-    <nav>
+    <Nav>
       <Link href="/">
-        <a>
+        <NavA>
           <h1>Alex Kalinin</h1>
-        </a>
+        </NavA>
       </Link>
       <div>
-        <a href="https://github.com/Kalininator">GitHub</a>
-        <a href="https://www.linkedin.com/in/kalininator/">LinkedIn</a>
+        <NavA href="https://github.com/Kalininator">GitHub</NavA>
+        <NavA href="https://www.linkedin.com/in/kalininator/">LinkedIn</NavA>
       </div>
-      <style jsx>{`
-        nav {
-          background: #3c3836;
-          width: auto;
-          padding: 0 2rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 1rem;
-        }
-        nav a {
-          margin-right: 1rem;
-          text-decoration: none;
-          color: #fabd2f;
-        }
-        nav a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
-    </nav>
+    </Nav>
   );
 }
