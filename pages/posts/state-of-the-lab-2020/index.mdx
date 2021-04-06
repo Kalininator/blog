@@ -60,7 +60,7 @@ As you may have guessed from me mentioning the vSAN cluster, my VM hosts are all
 Resource summary for whole lab
 One of the core things I run across the network is Windows Active Directory. This manages DNS, DHCP, and SSO, among other things. The main reasons for using it are the SSO and GPO. GPO makes managing any Windows VMs a breeze, and the single sign-on is very handy when handling file permissions for my storage provided by FreeNAS.
 
-For the networking portion, I am running VyOS for the routers, which are also virtual machines. By having the routers as virtual machines, I can have regular backups, snapshots, and the ability to maintain uptime using both VMware HA and vMotion for when hosts are down for maintenance. You can read more about why I chose VyOS in this post.
+For the networking portion, I am running VyOS for the routers, which are also virtual machines. By having the routers as virtual machines, I can have regular backups, snapshots, and the ability to maintain uptime using both VMware HA and vMotion for when hosts are down for maintenance. You can read more about why I chose VyOS in [this post](/posts/goodbye-pfsense-hello-vyos).
 
 # Other miscellaneous things
 

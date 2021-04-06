@@ -22,7 +22,8 @@ The most common solution to this problem, and the easiest in my opinion, is to c
 
 <img alt="Perc H310" src={require('./hba.jpg')} />
 
-My HBA of choice here is the Dell Perc H310. This RAID card can be flashed into HBA mode fairly easily, and a great guide can be found here. The H200 used to be the card of choice, but this one is newer and their prices have dropped to be about the same. Another good choice would be to get an LSI HBA, but I have found they are harder to find in the UK, and these Dell cards are built off of LSI controllers anyway. This HBA cost me around £30, which is a pretty fair price.
+My HBA of choice here is the Dell Perc H310. This RAID card can be flashed into HBA mode fairly easily, and a great guide can be [found here](https://techmattr.wordpress.com/2016/04/11/updated-sas-hba-crossflashing-or-flashing-to-it-mode-dell-perc-h200-and-h310/). 
+The H200 used to be the card of choice, but this one is newer and their prices have dropped to be about the same. Another good choice would be to get an LSI HBA, but I have found they are harder to find in the UK, and these Dell cards are built off of LSI controllers anyway. This HBA cost me around £30, which is a pretty fair price.
 
 Enabling PCIe passthrough for the HBA was very straightforward in ESXi. As of vSphere 7.0 this no longer requires a host reboot which is a very nice improvement from 6.7.
 

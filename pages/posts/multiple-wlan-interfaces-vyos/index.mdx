@@ -13,7 +13,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 During the setup of a project of mine, I ran into an issue with VyOS where I couldn’t figure out how to setup multiple wireless interfaces. So after some digging around online and some help from a few people, I figured out a way to get it up and running.
 
 # The goal
-As part of this project, I needed to have multiple wireless interfaces in VyOS. I needed a WiFi client to act as one of the WAN connections, and an access point for connecting my laptop/phone to the network. You can find more details about the project as a whole in my previous blog post.
+As part of this project, I needed to have multiple wireless interfaces in VyOS. I needed a WiFi client to act as one of the WAN connections, and an access point for connecting my laptop/phone to the network. You can find more details about the project as a whole in my [previous blog post](/posts/homelab-in-your-pocket).
 
 # The problem
 I found that in VyOS, there would be an interface called wlan0 that worked perfectly as both an access point, or a client, but not both at the same time. I was pretty sure this WiFi card could have multiple virtual interfaces. As well as that, the VyOS docs suggest that multiple virtual interfaces can be used for cards that support it.

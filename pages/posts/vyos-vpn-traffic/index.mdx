@@ -28,7 +28,7 @@ In pfSense, I had this solution set up using firewall rules and an IP list that 
 2. Block any traffic in the PIA-ONLY list. This ensures that this traffic does not go over the regular internet connection if the VPN gateway is down.
 3. Send all remaining traffic over the regular internet connection
 
-This solution worked rather effectively, and I had been using this setup happily for quite a while. The original guide I used for this can be found on MonsterMuffin’s blog. The post is quite old now, but it is still a working solution, so I would recommend looking at that if you are using pfSense.
+This solution worked rather effectively, and I had been using this setup happily for quite a while. The original guide I used for this can be found on [MonsterMuffin’s blog](https://blog.monstermuffin.org/tunneling-specific-traffic-over-a-vpn-with-pfsense/). The post is quite old now, but it is still a working solution, so I would recommend looking at that if you are using pfSense.
 
 # The VyOS approach
 
@@ -42,7 +42,7 @@ Other VPN protocols such as WireGuard will also work, I just won’t be covering
 
 With PIA OpenVPN, you need to download the CA Cert File, and save this as a file in VyOS. You can do this either by editing the file and pasting in the data, or by copying it in using something like scp.
 
-The certificates can be found through this page on their site.
+The certificates can be found through [this page on their site](https://www.privateinternetaccess.com/pages/client-support/).
 
 You will also need your PIA username and password.
 
@@ -136,4 +136,4 @@ If you followed the above, you should now have the result I was aiming for, and 
 
 While this setup shows how to direct traffic based on IP, you can use other methods of filtering by adding the appropriate rules to the routing policy created in this guide.
 
-As usual, my timing was questionable with this, as the day after I set this up as an OpenVPN connection, PIA announced beta testing for WireGuard connection. I’ll probably switch the setup to that when it is out of beta.
+As usual, my timing was questionable with this, as the day after I set this up as an OpenVPN connection, PIA announced [beta testing](https://www.privateinternetaccess.com/blog/private-internet-access-announces-wireguard-vpn-beta/) for WireGuard connection. I’ll probably switch the setup to that when it is out of beta.

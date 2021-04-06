@@ -11,7 +11,7 @@ export const meta = {
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 
-If you haven't read my previous posts, I recently built a new home server with the goal of completely replacing my server rack. This server would completely replace my existing power-hungry vSAN cluster, as well as replacing my NAS. This is what the newly built setup looks like, for the most part, as well as the existing rack for comparison.
+If you haven't read my previous posts, I recently [built a new home server](/posts/threadripper-build) with the goal of completely replacing my server rack. This server would completely replace my existing power-hungry vSAN cluster, as well as [replacing my NAS](/posts/threadripper-build-storage). This is what the newly built setup looks like, for the most part, as well as the existing rack for comparison.
 
 <div style={{ display: 'flex', height:"300px" }}>
 <img alt="Rack" style={{ width: "50%" }} src={require('./rack.jpg')} />
@@ -53,7 +53,7 @@ Now came the fun part. It was time to start tearing apart the old rack. The main
 
 <img alt="Mostly empty rack" src={require('./mostly-empty-rack.png')} />
 
-To wipe the drives, I used PartedMagic. It's a really nice tool, that can boot from an ISO and load into RAM. It has a lot of tools for wiping drives and getting stats off them. The wiping took quite a while with my 4TB drives, and was probably the most time consuming part of this migration.
+To wipe the drives, I used [PartedMagic](https://partedmagic.com/). It's a really nice tool, that can boot from an ISO and load into RAM. It has a lot of tools for wiping drives and getting stats off them. The wiping took quite a while with my 4TB drives, and was probably the most time consuming part of this migration.
 
 <img alt="Nwipe statistics" src={require('./nwipe.png')} />
 
