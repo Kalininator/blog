@@ -6,11 +6,13 @@ module.exports = {
   },
   parserOptions: { ecmaVersion: 8 }, // to enable features such as async/await
   ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'], // We don't want to lint generated files nor node_modules, but we want to lint .prettierrc.js (ignored by default by eslint)
-  plugins: ['styled-components-a11y'],
+  plugins: [
+    // 'styled-components-a11y'
+  ],
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
-    'plugin:styled-components-a11y/recommended',
+    // 'plugin:styled-components-a11y/recommended',
   ],
   overrides: [
     // This configuration will apply only to TypeScript files
@@ -40,7 +42,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
 
         // This rule is not compatible with Next.js's <Link /> components
-        // 'jsx-a11y/anchor-is-valid': 'off',
+        'jsx-a11y/anchor-is-valid': 'off',
 
         // Why would you want unused vars?
         '@typescript-eslint/no-unused-vars': ['error'],
