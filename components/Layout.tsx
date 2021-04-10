@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styled, { createGlobalStyle } from 'styled-components';
+import { MDXProvider, MDXProviderComponentsProp } from '@mdx-js/react';
 import Header from './Header';
 
 const GlobalStyle = createGlobalStyle`
@@ -13,28 +14,26 @@ const GlobalStyle = createGlobalStyle`
     color: #fbf1c7;
     font-size: 1rem;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 700;
-    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  a {
+`;
+
+const components: MDXProviderComponentsProp = {
+  a: styled.a`
     color: #fbf1c7;
-  }
-  img {
+  `,
+  h1: styled.h1`
+    font-weight: 700;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  `,
+  pre: styled.pre`
+    white-space: pre-wrap;
+  `,
+  img: styled.img`
     max-width: 100%;
     height: auto;
     object-fit: contain;
-  }
-  pre {
-    white-space: pre-wrap;
-  }
-`;
+  `,
+};
 
 const Content = styled.div`
   max-width: 600px;
@@ -52,7 +51,7 @@ export default function Layout({
   description: string;
 }): JSX.Element {
   return (
-    <>
+    <MDXProvider components={components}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -67,6 +66,6 @@ export default function Layout({
         <Header />
         <Content>{children}</Content>
       </main>
-    </>
+    </MDXProvider>
   );
 }
