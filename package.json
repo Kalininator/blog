@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.4.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@mdx-js/loader": "^1.6.22",
