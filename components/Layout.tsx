@@ -10,15 +10,15 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #282828;
-    color: #fbf1c7;
+    background: ${({ theme }) => theme.colors.bg};
+    color: ${({ theme }) => theme.colors.plainText};
     font-size: 1rem;
   }
 `;
 
 const components: MDXProviderComponentsProp = {
   a: styled.a`
-    color: #fbf1c7;
+    color: ${({ theme }) => theme.colors.plainText};
   `,
   h1: styled.h1`
     font-weight: 700;

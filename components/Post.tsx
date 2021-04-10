@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const PostTitle = styled.h1`
   font-size: 1.5rem;
   font-weight: 700;
-  color: #d79921;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 const PostDetails = styled.div`
@@ -14,7 +14,7 @@ const PostDetails = styled.div`
 `;
 
 const PostDetailSpan = styled.span`
-  color: #8ec07c;
+  color: ${({ theme }) => theme.colors.detailText};
   margin-right: 1rem;
 `;
 

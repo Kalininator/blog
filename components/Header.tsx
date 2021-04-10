@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-  background: #3c3836;
+  background: ${({ theme }) => theme.colors.navBg};
   width: auto;
   padding: 0 2rem;
   display: flex;
@@ -14,7 +14,7 @@ const Nav = styled.nav`
 const NavA = styled.a`
   margin-right: 1rem;
   text-decoration: none;
-  color: #fabd2f;
+  color: ${({ theme }) => theme.colors.navText};
   &:hover {
     text-decoration: underline;
   }

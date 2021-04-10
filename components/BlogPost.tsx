@@ -6,7 +6,7 @@ import { PostModule } from './getAllPosts';
 const GreatTitle = styled.h1`
   font-size: 2rem;
   font-weight: 700;
-  color: #d79921;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 const DetailsSection = styled.div`
@@ -14,7 +14,7 @@ const DetailsSection = styled.div`
 `;
 
 const Details = styled.span`
-  color: #8ec07c;
+  color: ${({ theme }) => theme.colors.detailText};
   margin-right: 1rem;
 `;
 
