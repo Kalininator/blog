@@ -20,7 +20,10 @@ const PostDetailSpan = styled.span`
 
 const PlainLink = styled.a`
   text-decoration: none;
+  cursor: pointer;
 `;
+
+const Article = styled.article``;
 
 export const Post = ({ post }: { post: post }): JSX.Element => {
   const {
@@ -32,7 +35,7 @@ export const Post = ({ post }: { post: post }): JSX.Element => {
     <>
       <Link href={link}>
         <PlainLink>
-          <article>
+          <Article>
             <PostTitle>{meta.title}</PostTitle>
             <PostDetails>
               <p>{meta.description}</p>
@@ -41,7 +44,7 @@ export const Post = ({ post }: { post: post }): JSX.Element => {
                 ☕ {meta.readTime + ' min read'}
               </PostDetailSpan>
             </PostDetails>
-          </article>
+          </Article>
         </PlainLink>
       </Link>
     </>

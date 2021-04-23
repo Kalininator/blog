@@ -15,6 +15,7 @@ const NavA = styled.a`
   margin-right: 1rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.navText};
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
