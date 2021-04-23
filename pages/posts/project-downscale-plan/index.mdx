@@ -36,7 +36,7 @@ By far the biggest part of the current setup, the vSAN cluster currently consist
 
 The current cluster has 6 CPUs total across 3 nodes, and 96GB RAM in each node. This means I will need a pretty powerful CPU to replace it, as well as a good amount of RAM. However, I could definitely downscale these specs. By moving more of my services to the server in colocation, The RAM and CPU requirements at home will drop.
 
-## NAS
+## NAS
 
 Currently, the NAS has 12x 4TB drives in the pool. To save power, and for future expansion, I can reconfigure this to use higher density drives. With 4x 14TB drives, I would only be losing a few TBs of usable capacity. And with 6x 14TB, I would have more capacity than currently. I would then be able to migrate the storage to it’s own build, or into the ESXi box. If this is possible, I would have 1 tower for almost everything, but this would raise the RAM requirements for that server.
 

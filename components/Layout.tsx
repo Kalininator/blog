@@ -24,6 +24,13 @@ const components: MDXProviderComponentsProp = {
     font-weight: 700;
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
       Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6em;
+  `,
+  h2: styled.h2`
+    font-weight: 600;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
   `,
   pre: styled.pre`
     white-space: pre-wrap;
