@@ -9,6 +9,7 @@ declare module 'styled-components' {
       navText: string;
       title: string;
       detailText: string;
+      blogHeader: string;
     };
   }
 }

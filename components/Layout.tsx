@@ -25,12 +25,14 @@ const components: MDXProviderComponentsProp = {
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
       Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6em;
+    color: ${({ theme }) => theme.colors.blogHeader};
   `,
   h2: styled.h2`
     font-weight: 600;
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
       Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3em;
+    color: ${({ theme }) => theme.colors.blogHeader};
   `,
   pre: styled.pre`
     white-space: pre-wrap;

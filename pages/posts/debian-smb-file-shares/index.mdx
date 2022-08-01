@@ -77,9 +77,9 @@ The next step is to add a file share and set appropriate folder permissions. Whe
 The first step is to create a new folder, and set the permissions accordingly. The commands you need are as follows, substituting in the values accordingly.
 
 ```
-sudo mkdir <folder path>
-sudo chmod -R 0770 <folder path>
-sudo chgrp -R <group> <folder path>
+sudo mkdir {folder path}
+sudo chmod -R 0770 {folder path}
+sudo chgrp -R {group} {folder path}
 ```
 
 Here is an example I did with the values substituted in. In this example I am creating a folder to keep my backups, and giving the Domain Users group access to it.
@@ -90,9 +90,9 @@ Once the folder is created and permissions set, we just need to add an entry to 
 ```
 [Share name here]
     comment = some comment here
-    path = <folder path>
-    valid users = <user group>
-    force group = <user group>
+    path = {folder path}
+    valid users = {user group}
+    force group = {user group}
     writable = yes
     read only = no
     force create mode = 0660
