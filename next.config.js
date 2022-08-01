@@ -55,12 +55,5 @@ module.exports = withImages(
     async redirects() {
       return [...oldPostRedirects];
     },
-    i18n: {
-      locales: ['en'],
-      defaultLocale: 'en',
-    },
-    images: {
-      disableStaticImages: true,
-    },
   })
 );
