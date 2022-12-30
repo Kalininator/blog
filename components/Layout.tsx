@@ -47,12 +47,13 @@ const components: MDXProviderComponentsProp = {
   img: styled.img`
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
     object-fit: contain;
   `,
 };
 
 const Content = styled.div`
-  max-width: 600px;
+  max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 `;
