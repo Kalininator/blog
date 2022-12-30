@@ -3,7 +3,7 @@ export const meta = {
   title: 'Lab Without a Home',
   description: 'Preparing the homelab for full time travelling, and simplifying a lot',
   date: '2022-12-30',
-  readTime: 10
+  readTime: 5
 }
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
@@ -90,7 +90,7 @@ smart bulbs and sensors.
 Full hardware list for home:
 
 * Fitlet2 - The small (still overkill) host that's only running VyOS and HomeAssistant
-* Dumb 8 port netgear switch - It sucks but it's enough
+* Dumb 8 port netgear switch - It sucks but, it's enough
 * TP-Link EAP620 HD - Had this AP since moving in and it's been great if not a bit overkill
 * Silvercrest Zigbee Hub - This connects all my smart devices
 
@@ -100,9 +100,9 @@ There's really not a lot to it here and when I move out, it will all just get th
 
 # Conclusion
 
-Overall I really like this new setup. It's a lot simpler and means I can go travelling while still keeping the lab fully functional.
-The new colocation box is still very well specced (too much if anything), so there is plenty of room to setup more services.
+Overall I like this new setup. It's a lot simpler and means I can go travelling while still keeping the lab fully functional.
+The new colocation box is still very well specced (too much, if anything), so there is plenty of room to set up more services.
 
 Hopefully I never have to visit the server in colocation and it just keeps running fine. 
 Its been running seamlessly for a little while now so I'm optimistic about it, and there is remote management on the MB if anything does happen.
-For next steps, I should really get round to setting up better monitoring for all this with Grafana/Prometheus, and some alerting.
+For next steps, I should get around to setting up better monitoring for all this with Grafana/Prometheus, and some alerting.
