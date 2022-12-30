@@ -25,7 +25,7 @@ export default function Header(): JSX.Element {
   return (
     <Nav>
       <Link href="/">
-        <NavA>
+        <NavA href="/">
           <h1>Alex Kalinin</h1>
         </NavA>
       </Link>
